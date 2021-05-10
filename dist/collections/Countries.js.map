@@ -1,1 +1,0 @@
-{"version":3,"file":"Countries.js","sourceRoot":"","sources":["../../src/collections/Countries.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,wBAAwB,CAAC;AACpD,OAAO,OAAO,MAAM,mBAAmB,CAAC;AAExC,MAAM,CAAC,OAAO,OAAO,SAAU,SAAQ,UAAmB;IACxD,KAAK;QACH,OAAO,OAAO,CAAC;IACjB,CAAC;IAED,MAAM;QACJ,OAAO;YACL,KAAK,EAAE,iBAAiB;SACzB,CAAC;IACJ,CAAC;CACF"}
