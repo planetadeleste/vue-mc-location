@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-location",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "Models and Collections for RainLab.Location and VojtaSvoboda.LocationTown plugins",
   "main": "dist/vue-mc-location.js",
   "module": "dist/vue-mc-location.es.js",
@@ -48,6 +48,11 @@
     "url": "https://github.com/planetadeleste/vue-mc-location/issues"
   },
   "homepage": "https://github.com/planetadeleste/vue-mc-location#readme",
+  "files": [
+    "dist",
+    "src/index.d.ts",
+    "src/types"
+  ],
   "keywords": [
     "vuemc",
     "vue",
