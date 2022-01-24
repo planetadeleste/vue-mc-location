@@ -2,7 +2,7 @@
   /**
    * @license
    * author: Alvaro Canepa
-   * vue-mc-location.js v1.0.50
+   * vue-mc-location.js v1.0.51
    * Released under the MIT license.
    */
 
