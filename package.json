@@ -59,5 +59,8 @@
     "mc",
     "gestionweb",
     "gw"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
