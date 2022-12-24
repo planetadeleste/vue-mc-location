@@ -1,8 +1,8 @@
-import { Model, cleanStr } from "@planetadeleste/vue-mc";
-import { required, string, number } from "vue-mc/validation";
+import { cleanStr, Model } from "@planetadeleste/vue-mc";
+import { number, required, string } from "@planetadeleste/vuemc/validation";
 import { toNumber } from "lodash";
 import State from "./State";
-import { StateData } from "../types/State";
+import { StateData } from "@/types";
 
 export default class Town extends Model {
   defaults(): Record<string, any> {

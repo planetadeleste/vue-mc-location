@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-location",
-  "version": "1.0.51",
+  "version": "2.0.0",
   "description": "Models and Collections for RainLab.Location and VojtaSvoboda.LocationTown plugins",
   "main": "dist/vue-mc-location.js",
   "module": "dist/vue-mc-location.es.js",
@@ -36,7 +36,7 @@
   "scripts": {
     "generate": "node ./tools/generate.js",
     "lint": "eslint --fix 'src/**/*.ts'",
-    "build": "rollup -c"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "peerDependencies": {
     "@planetadeleste/vue-mc": "^2.0.1"
