@@ -1,10 +1,10 @@
-import { Model, cleanStr } from "@planetadeleste/vue-mc";
-import { required, string } from "vue-mc/validation";
-import { Response } from "vue-mc";
-import { toNumber, pick } from "lodash";
-import { StateData } from "../types/State";
+import { cleanStr, Model } from "@planetadeleste/vue-mc";
+import { required, string } from "@planetadeleste/vuemc/validation";
+import { Response } from "@planetadeleste/vuemc";
+import { pick, toNumber } from "lodash";
+import { CountryData, StateData } from "@/types";
 
-export default class Country extends Model {
+export default class Country extends Model<CountryData> {
   defaults(): Record<string, any> {
     return {
       id: null,

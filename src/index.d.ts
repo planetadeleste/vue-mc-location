@@ -1,26 +1,66 @@
 import "@planetadeleste/vue-mc";
-import { CountryData, StateData, TownData } from "./types";
+import {CountryData, StateData, TownData} from "./types";
+import {Response} from "vue-mc";
+import {Collection, Model} from "@planetadeleste/vue-mc";
 
-declare module "@planetadeleste/vue-mc-location" {
-  import { Response } from "vue-mc";
-  import { Model, Collection } from "@planetadeleste/vue-mc";
-  export { CountryData, StateData, TownData };
-
-  class Country extends Model {
-    getStates(): Promise<Response<StateData[]>>;
-  }
-  interface Country extends Model, CountryData {}
-
-  class State extends Model {
-    getTowns(): Promise<Response<TownData[]>>;
-  }
-  interface State extends Model, StateData {}
-
-  class Town extends Model {}
-  interface Town extends Model, TownData {}
-
-  export { Country, State, Town };
-  export class Countries extends Collection<Country> {}
-  export class States extends Collection<State> {}
-  export class Towns extends Collection<Town> {}
+interface Country extends Model, CountryData {
 }
+
+class Country extends Model {
+    getStates(): Promise<Response<StateData[]>>;
+}
+
+class CountryCollection extends Collection<Country> {
+}
+
+/**
+ * @deprecated Use `CountryCollection`
+ */
+class Countries extends CountryCollection {
+}
+
+interface State extends Model, StateData {
+}
+
+class State extends Model {
+    getTowns(): Promise<Response<TownData[]>>;
+}
+
+class StateCollection extends Collection<State> {
+}
+
+/**
+ * @deprecated Use `StateCollection`
+ */
+class States extends StateCollection {
+}
+
+interface Town extends Model, TownData {
+}
+
+class Town extends Model {
+}
+
+class TownCollection extends Collection<Town> {
+}
+
+/**
+ * @deprecated Use `TownCollection`
+ */
+class Towns extends TownCollection {
+}
+
+export {
+    Country,
+    CountryData,
+    CountryCollection,
+    Countries,
+    State,
+    StateData,
+    StateCollection,
+    States,
+    Town,
+    TownData,
+    TownCollection,
+    Towns
+};
