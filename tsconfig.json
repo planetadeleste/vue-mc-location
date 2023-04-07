@@ -20,6 +20,6 @@
     "typeRoots": ["src/types", "node_modules/@types"],
     "outDir": "./dist/"
   },
-  "include": ["src/**/*.ts", "src/types/**/*.ts"],
+  "include": ["src/**/*.ts", "src/types/**/*.ts", "src"],
   "exclude": ["node_modules"]
 }

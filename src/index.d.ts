@@ -1,66 +1,56 @@
 import "@planetadeleste/vue-mc";
-import {CountryData, StateData, TownData} from "./types";
-import {Response} from "vue-mc";
-import {Collection, Model} from "@planetadeleste/vue-mc";
+import { CountryData, StateData, TownData } from "./types";
+import { Collection, Model } from "@planetadeleste/vue-mc";
+import { Response } from "@planetadeleste/vuemc";
 
-interface Country extends Model, CountryData {
-}
+interface Country extends Model, CountryData {}
 
 class Country extends Model {
-    getStates(): Promise<Response<StateData[]>>;
+  getStates(): Promise<Response<StateData[]>>;
 }
 
-class CountryCollection extends Collection<Country> {
-}
+class CountryCollection extends Collection<Country> {}
 
 /**
  * @deprecated Use `CountryCollection`
  */
-class Countries extends CountryCollection {
-}
+class Countries extends CountryCollection {}
 
-interface State extends Model, StateData {
-}
+interface State extends Model, StateData {}
 
 class State extends Model {
-    getTowns(): Promise<Response<TownData[]>>;
+  getTowns(): Promise<Response<TownData[]>>;
 }
 
-class StateCollection extends Collection<State> {
-}
+class StateCollection extends Collection<State> {}
 
 /**
  * @deprecated Use `StateCollection`
  */
-class States extends StateCollection {
-}
+class States extends StateCollection {}
 
-interface Town extends Model, TownData {
-}
+interface Town extends Model, TownData {}
 
-class Town extends Model {
-}
+class Town extends Model {}
 
-class TownCollection extends Collection<Town> {
-}
+class TownCollection extends Collection<Town> {}
 
 /**
  * @deprecated Use `TownCollection`
  */
-class Towns extends TownCollection {
-}
+class Towns extends TownCollection {}
 
 export {
-    Country,
-    CountryData,
-    CountryCollection,
-    Countries,
-    State,
-    StateData,
-    StateCollection,
-    States,
-    Town,
-    TownData,
-    TownCollection,
-    Towns
+  Country,
+  CountryData,
+  CountryCollection,
+  Countries,
+  State,
+  StateData,
+  StateCollection,
+  States,
+  Town,
+  TownData,
+  TownCollection,
+  Towns,
 };
