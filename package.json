@@ -1,6 +1,6 @@
 {
   "name": "@planetadeleste/vue-mc-location",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Models and Collections for RainLab.Location and VojtaSvoboda.LocationTown plugins",
   "main": "dist/vue-mc-location.js",
   "module": "dist/vue-mc-location.es.js",
